@@ -26,7 +26,7 @@
  var noticeBody = '【振替フォームに更新がありました。】\n'
                 +'内容は下記になります。\n'
                 + '↓は振替シートのURL\n';
- var url = 'https://docs.google.com/spreadsheets/d/1MPr-f7aJTMu0eSBy-J-biMYvFWNfxUpb5839VOBlzuY/edit#gid=579214504';
+ var url = 'スプレッドシートのURL';
 
 function automail() {
  
@@ -130,13 +130,13 @@ function automail() {
           +"振替登録が完了いたしました。\n\n"
           +"それでは" + rescheduleDateValue +"に" + subLocationValue + "校でお待ちしております。\n\n"
           +"会場や時間の確認は下記URLよりお願い致します。\n"
-          +"https://techroomjr.jp/\n\n";
+          +"https://会社のHP.jp/\n\n";
   }
   else{
      body = "大変申し訳ございませんが、入力情報に誤りがございます。\n"
           + "現在通っている校舎と振替先校舎で同じ校舎を選択していないこと、\n"
           + "欠席日と振替日が土曜日になっていること、\n"
-          + "またHP（https://techroomjr.jp）より最新の開講日をご確認していただき、\n"
+          + "またHP（会社のHP）より最新の開講日をご確認していただき、\n"
           + "下記URLより再度振替登録をお願い致します。\n"
           + "https://techroomjr.jp/furikae/\n\n"
           + "↓登録内容↓\n"
@@ -152,10 +152,10 @@ function automail() {
        if (phoneNo != ""){
          + "TEL :" + phoneNo +"\n"
        }
-        + "MAIL : programingcamp@outlook.com";
+        + "MAIL : メールアドレス";
 
   //テスト用
-  //addressValue = 'wforskk@gmail.com';
+  //addressValue = 'メールアドレス';
  main = header
       + body
       + footer;
